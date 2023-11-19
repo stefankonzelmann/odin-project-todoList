@@ -21,8 +21,24 @@ Projects
 
 ```json
 {
+    // Attributes
     name,
     description,
-    color
+    color,
+    defaultFlag,
+    toDos = []
+
+    // Methods
+    addToDo()
+    getToDos()
+    removeToDo()
 }
 ```
+
+### Modules
+
+- Project Class
+- ToDoItemt Class
+- DomController
+- Project Creator
+- ToDo Creator
