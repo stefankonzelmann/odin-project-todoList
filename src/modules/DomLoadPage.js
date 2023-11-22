@@ -19,7 +19,6 @@ export default function loadPage() {
     <dialog id="taskDialog">
       <form method="dialog">
         <p>
-          <label for="taskTitle">Task Title</label><br />
           <input type="text" id="taskTitle" name="taskTitle" />
         </p>
         <div class="formButtons">
