@@ -13,7 +13,7 @@ export default function addToDoToPage(toDo) {
 
   toDos.appendChild(newToDo);
 
-  newToDoCheckbox.addEventListener("click", (e) => {
+  newToDoCheckbox.addEventListener("click", () => {
     newToDo.remove();
   });
 }

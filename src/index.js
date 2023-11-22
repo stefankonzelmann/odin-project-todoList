@@ -1,6 +1,6 @@
 import loadPage from "./modules/DomLoadPage";
 import ToDo from "./modules/toDoClass";
-import addToDoToPage from "./modules/DomAddToDo";
+import addToDoToPage from "./modules/DomDisplayToDo";
 
 loadPage();
 let test1 = new ToDo("test1");
