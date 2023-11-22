@@ -17,10 +17,10 @@ export default function loadPage() {
   toDos.classList.add("toDos");
   footer.classList.add("footer");
 
-  header.innerText = "Odinist";
-  projects.innerText = "Projects";
-  toDos.innerText = "To Dos";
-  footer.innerText = "footer";
+  // header.innerText = "Odinist";
+  // projects.innerText = "Projects";
+  // toDos.innerText = "To Dos";
+  // footer.innerText = "footer";
 
   wrapper.appendChild(header);
   wrapper.appendChild(projects);

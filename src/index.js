@@ -3,6 +3,9 @@ import ToDo from "./modules/toDoClass";
 import addToDoToPage from "./modules/DomAddToDo";
 
 loadPage();
-let test = new ToDo("test");
-console.log(test);
-addToDoToPage(test.title);
+let test1 = new ToDo("test1");
+let test2 = new ToDo("test2");
+let test3 = new ToDo("test3");
+addToDoToPage(test1.title);
+addToDoToPage(test2.title);
+addToDoToPage(test3.title);

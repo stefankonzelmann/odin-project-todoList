@@ -12,8 +12,14 @@ body {
 .projects,
 .toDos,
 .footer {
-  border: solid black;
+  border: dashed black;
+  border-width: 0.5px;
   padding: 20px;
+}
+
+.header,
+.footer {
+  background-color: rgb(172, 172, 172);
 }
 
 .header {
@@ -24,6 +30,7 @@ body {
 }
 
 .projects {
+  background-color: rgb(47, 47, 47);
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
@@ -31,10 +38,13 @@ body {
 }
 
 .toDos {
+  background-color: rgb(80, 80, 80);
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {
@@ -42,4 +52,11 @@ body {
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
+}
+
+.toDo {
+  font-size: 20px;
+  padding: 5px;
+  display: flex;
+  gap: 10px;
 }
