@@ -1,9 +1,45 @@
+body {
+  margin: auto;
+}
 .wrapper {
-  display: grid;
+  height: 100vh;
+  width: 100vw;
+  display: inline-grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 10fr 1fr;
 }
 .header,
 .projects,
 .toDos,
 .footer {
   border: solid black;
+  padding: 20px;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.projects {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.toDos {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }

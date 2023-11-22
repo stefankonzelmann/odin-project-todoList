@@ -1,6 +1,6 @@
 export default class ToDo {
-  constructor(title, description, dueDate, priority, notes) {
-    (this.title = title),
+  constructor(projectName, title, description, dueDate, priority, notes) {
+    (this.projectName = projectName((this.title = title))),
       (this.description = description),
       (this.dueDate = dueDate),
       (this.priority = priotity),
