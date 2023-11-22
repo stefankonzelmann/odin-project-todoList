@@ -4,54 +4,28 @@ body {
 .wrapper {
   height: 100vh;
   width: 100vw;
-  display: inline-grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 10fr 1fr;
+  display: flex;
 }
-.header,
-.projects,
-.toDos,
-.footer {
-  border: dashed black;
+
+.sidebar,
+.toDos {
   border-width: 0.5px;
   padding: 20px;
 }
 
-.header,
-.footer {
-  background-color: rgb(172, 172, 172);
-}
-
-.header {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-
-.projects {
+.sidebar {
   background-color: rgb(47, 47, 47);
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 150px;
 }
 
 .toDos {
   background-color: rgb(80, 80, 80);
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
   display: flex;
   flex-direction: column;
-}
-
-.footer {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  flex-grow: 4;
+  flex-basis: 100px;
 }
 
 .toDo {

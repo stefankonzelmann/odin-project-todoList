@@ -7,24 +7,15 @@ export default function loadPage() {
 
   const wrapper = document.createElement("div");
   const header = document.createElement("div");
-  const projects = document.createElement("div");
+  const sidebar = document.createElement("div");
   const toDos = document.createElement("div");
   const footer = document.createElement("div");
 
   wrapper.classList.add("wrapper");
-  header.classList.add("header");
-  projects.classList.add("projects");
+  sidebar.classList.add("sidebar");
   toDos.classList.add("toDos");
-  footer.classList.add("footer");
 
-  // header.innerText = "Odinist";
-  // projects.innerText = "Projects";
-  // toDos.innerText = "To Dos";
-  // footer.innerText = "footer";
-
-  wrapper.appendChild(header);
-  wrapper.appendChild(projects);
+  wrapper.appendChild(sidebar);
   wrapper.appendChild(toDos);
-  wrapper.appendChild(footer);
   content.appendChild(wrapper);
 }

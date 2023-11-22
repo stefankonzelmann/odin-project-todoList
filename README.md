@@ -52,5 +52,5 @@ Projects
 - Styling
   - more minimal (no header / footer)
   - inlcude title and button in sidebar
-  - get nordic font from form project
+  - get nordic font from form project for title
 - Implement Projects (steps tbd)
