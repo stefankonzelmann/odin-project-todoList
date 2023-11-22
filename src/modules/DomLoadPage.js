@@ -1,7 +1,6 @@
 import "../style.css";
 
 export default function loadPage() {
-  console.log("Loading page...");
   const content = document.getElementById("content");
   content.innerHTML = "";
 
