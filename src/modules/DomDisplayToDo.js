@@ -5,12 +5,12 @@ export default function addToDoToPage(toDo) {
   const newToDoCheckbox = document.createElement("div");
 
   newToDo.classList.add("toDo");
-  newToDoTitle.innerText = toDo;
-  newToDoCheckbox.innerText = "[ ]";
+  newToDoCheckbox.classList.add("toDoCheckbox");
+  newToDoTitle.innerText = toDo.title;
+  newToDoCheckbox.innerText = "O";
 
   newToDo.appendChild(newToDoCheckbox);
   newToDo.appendChild(newToDoTitle);
-
   toDos.appendChild(newToDo);
 
   newToDoCheckbox.addEventListener("click", () => {

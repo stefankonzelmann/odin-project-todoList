@@ -1,3 +1,4 @@
+import createToDo from "./toDoCreator";
 /*
  <dialog id="bookDialog">
       <form method="dialog">
@@ -18,5 +19,6 @@
 */
 
 export default function loadDialog() {
+  createToDo();
   console.log("Opening dialog...");
 }
