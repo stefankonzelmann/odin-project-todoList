@@ -1,4 +1,8 @@
-import loadPage from "./modules/pageLoader";
+import loadPage from "./modules/DomLoadPage";
+import ToDo from "./modules/toDoClass";
+import addToDoToPage from "./modules/DomAddToDo";
 
 loadPage();
-// Create Project "Inbox" as default
+let test = new ToDo("test");
+console.log(test);
+addToDoToPage(test.title);
