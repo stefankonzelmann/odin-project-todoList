@@ -17,7 +17,7 @@ body {
   background-color: rgb(23, 23, 23);
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 150px;
+  flex-basis: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,14 +25,14 @@ body {
 
 .title {
   font-family: "norse";
-  font-size: 45px;
+  font-size: 80px;
   color: white;
 }
 
 .toDos {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
-  padding: 100px 20px 20px 20px;
+  padding: 150px 50px 50px 50px;
   background-color: rgb(52, 52, 52);
   display: flex;
   flex-direction: column;
@@ -41,8 +41,8 @@ body {
 }
 
 .toDo {
-  font-size: 20px;
+  font-size: 35px;
   padding: 5px;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
