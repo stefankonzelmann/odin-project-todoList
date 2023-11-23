@@ -1,9 +1,7 @@
 export default class Project {
-  constructor(name, description, color) {
-    (this.name = name), (this.description = description), (this.color = color);
+  constructor(name) {
+    this.name = name;
   }
-
-  default = false;
   toDos = [];
 
   addToDo(toDo) {
@@ -13,8 +11,4 @@ export default class Project {
     return this.toDos;
   }
   removeToDo() {}
-
-  setToDefault() {
-    this.default = true;
-  }
 }

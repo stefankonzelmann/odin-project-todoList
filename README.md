@@ -54,3 +54,7 @@ Projects
   - inlcude title and button in sidebar
   - get nordic font from form project for title
 - Implement Projects (steps tbd)
+
+---
+
+Feels like im stuck because of trying to make a module for everything. Change of course: Move everything to index.js and outsource it bit by bit as I go along.

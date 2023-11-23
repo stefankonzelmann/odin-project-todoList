@@ -1,5 +1,4 @@
 import "../style.css";
-import loadDialog from "./DomLoadDialog";
 import createToDo from "./toDoCreator";
 
 export default function loadPage() {
@@ -8,12 +7,11 @@ export default function loadPage() {
   content.innerHTML = "";
 
   const wrapper = document.createElement("div");
-  const header = document.createElement("div");
   const sidebar = document.createElement("div");
   const toDos = document.createElement("div");
-  const footer = document.createElement("div");
   const title = document.createElement("div");
   const btnAddToDo = document.createElement("button");
+  const projectList = document.createElement("div");
 
   const dialog = `
     <dialog id="taskDialog">
@@ -36,9 +34,11 @@ export default function loadPage() {
   toDos.classList.add("toDos");
   title.classList.add("title");
   btnAddToDo.classList.add("btnAddToDo");
+  projectList.classList.add("projectList");
 
   sidebar.appendChild(title);
   sidebar.appendChild(btnAddToDo);
+  sidebar.appendChild(projectList);
   wrapper.appendChild(sidebar);
   wrapper.appendChild(toDos);
   content.appendChild(wrapper);

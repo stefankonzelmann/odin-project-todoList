@@ -1,0 +1,6 @@
+export default function addProjectToPage(project) {
+  console.log("Adding new project...");
+  const sidebar = document.querySelector(".projectList");
+  const element = `<div class="project">${project.name}</div>`;
+  sidebar.insertAdjacentHTML("beforeend", element);
+}
