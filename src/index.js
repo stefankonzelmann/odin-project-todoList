@@ -4,10 +4,6 @@ class ToDo {
   constructor(title) {
     this.title = title;
   }
-
-  subtasks = [];
-
-  addSubTask() {}
 }
 
 class Project {
@@ -15,6 +11,7 @@ class Project {
     this.name = name;
   }
   toDos = [];
+  active = false;
 
   addToDo(toDo) {
     this.toDos.push(toDo);
@@ -121,16 +118,34 @@ function addToDoToPage(toDo) {
 }
 
 // Creator Functions
-function createToDo(title) {
+function createProject(projectName) {
+  const newProject = new Project(projectName);
+  projects.push(newProject);
+  addProjectToPage(newProject);
+}
+
+function createToDo(task, project) {
   // toDo object is not yet taken into account
-  const newToDo = new ToDo(title);
+  const newToDo = new ToDo(task);
+  project = findProject(project);
   addToDoToPage(newToDo);
+}
+
+function setActiveProject(projectName) {
+  projects.forEach((project) => (project.active = false));
+  findProject(projectName).active = true;
+}
+
+function findProject(projectName) {
+  const index = projects.findIndex((project) => project.name === projectName);
+  return projects[index];
 }
 
 ////////////////////////////////////////////////////
 ////////////////////////////////////////////////////
 loadPage();
 const projects = [];
-
-let inbox = new Project("Inbox");
-addProjectToPage(inbox);
+console.log(projects);
+createProject("Inbox");
+setActiveProject("Inbox");
+console.log(projects);
