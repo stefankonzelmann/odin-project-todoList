@@ -4,7 +4,7 @@
   --white: rgb(233, 233, 233);
 }
 @font-face {
-  font-family: "norse";
+  font-family: 'norse';
   src: url(assets/fonts/Norse-Bold.otf);
 }
 
@@ -30,13 +30,13 @@ body {
 }
 
 .title {
-  font-family: "norse";
+  font-family: 'norse';
   font-size: 80px;
   color: var(--white);
 }
 
 .toDos {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--white);
   padding: 150px 50px 50px 50px;
   background-color: var(--light-grey);
@@ -58,7 +58,7 @@ body {
 }
 
 .btnAddToDo {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 25px;
   padding: 20px;
   color: var(--white);
@@ -86,7 +86,7 @@ p > input,
 .formButtons > button {
   outline: none;
   border: solid var(--light-grey);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 25px;
   color: var(--white);
   background-color: var(--dark-grey);
@@ -110,13 +110,36 @@ p > input,
   border-radius: 40px;
 }
 
-.projectList {
+.projects {
   display: flex;
-  margin-top: 100px;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 150px;
+}
+
+.projectsHeader {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--white);
+  font-size: 30px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.projectsHeaderAdd {
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  background-color: var(--dark-grey);
+  border: solid;
+  border-radius: 50px;
+  color: var(--white);
 }
 
 .project {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 25px;
   background-color: var(--light-grey);
   color: white;

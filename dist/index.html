@@ -6,6 +6,42 @@
     <title>Odinist</title>
   <script defer src="bundle.js"></script></head>
   <body>
-    <div id="content"></div>
+    <div id="content">
+      <dialog id="taskDialog">
+        <form method="dialog">
+          <p>
+            <input type="text" id="taskTitle" name="taskTitle" />
+          </p>
+          <div class="formButtons">
+            <button id="cancelTask" type="reset">Cancel</button>
+            <button id="submitTask" type="submit">Save</button>
+          </div>
+        </form>
+      </dialog>
+      <dialog id="projectDialog">
+        <form method="dialog">
+          <p>
+            <input type="text" id="projectTitle" name="projectTitle" />
+          </p>
+          <div class="formButtons">
+            <button id="cancelProject" type="reset">Cancel</button>
+            <button id="submitProject" type="submit">Save</button>
+          </div>
+        </form>
+      </dialog>
+      <div class="wrapper">
+        <div class="sidebar">
+          <div class="title">Odinist</div>
+          <button class="btnAddToDo">+ Add Task</button>
+          <div class="projects">
+            <div class="projectsHeader">
+              <div class="projectsHeaderTitle">Projects</div>
+              <button class="projectsHeaderAdd">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="toDos"></div>
+      </div>
+    </div>
   </body>
 </html>
